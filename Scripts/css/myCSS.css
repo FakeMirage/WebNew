@@ -24,3 +24,13 @@ footer{
 {
 	
 }
+.centered-form
+{ 
+margin: 0 auto; 
+width:250px;
+}
+.table-content
+{
+	background-color: #4C4B54;
+
+}

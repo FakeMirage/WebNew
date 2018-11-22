@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<style type="text/css">
+		#myDIV
+			{ 
+				font-size: 50px;
+				-webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+				animation: mymove 5s infinite;
+				animation-direction: alternate;
+				text-transform: capitalize;
+				text-align: center;
+				text-shadow: 3px 2px rebeccapurple, -3px -2px darkred;
+			}
+
+		@-webkit-keyframes mymove 
+			{
+				from {color: black}
+				to {color: blue}
+				from {text-shadow: 2px 2px rebeccapurple, -2px -2px darkred}
+				to {text-shadow: 2px 2px springgreen, -2px -2px tan}
+			}
+			body
+			{
+				background-color: blanchedalmond;
+			}
+	</style>
+	<title>Registro</title>
+</head>
+<link rel ="stylesheet" href="style.css">
+	<div id = "myDIV">Registro de Personagem</div>
+		<body>
+			<form action="Registrado.html" method="post">
+			<brl/>
+				<center><table border="3", class = "oi">
+					<tr>
+						<td>
+							<p>Selecione uma raça</p>
+							<select name="Raça">
+								<option value="orc">Orc</option>
+								<option value="elfo">Elfo</option>
+								<option value="anao">Anão</option>
+								<option value="humano">Humano</option>
+								<option value="hobbit">Hobbit</option>
+							</select>
+						</td>
+						<td>
+							<p.tablecontent>Indique o nome do personagem:</p>
+							<input type="text" name="nome personagem" maxlength="30" size="30" />
+						</td>
+					</tr>
+						<tr>
+							<td>
+								<p>Selecione seus poderes</p>
+								<input type="radio" name="Poder"> Bola de Fogo 
+								 <br />
+								 <input type="radio" name="Poder"> Soco Destruidor 
+								 <br />
+								 <input type="radio" name="Poder"> Pé Flamejante
+								<br />
+								 <input type="radio" name = "Poder"> Golpe Cortante 
+								<br/>
+								 <input type="radio" name = "Poder"> Voar
+								<br/>
+							</td>				
+							<td>
+								<p>Selecione um poder ultimato</p>
+								<input type="radio" name="Ultimato"> Ultimato de Luzes
+								<input type="radio" name="Ultimato"> Ultimato de Fogo
+								<input type="radio" name="Ultimato"> Ultimato de Rochas
+
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<center>
+								<LABEL>Descrição do Personagem: </LABEL>
+								<br/>
+								 	<TEXTAREA rows = "10" cols = "50" name = "descricao"></TEXTAREA>
+								 </center>
+				 			</td>
+				 		</tr>
+				 </table>
+				<input type = "submit" name = "submit" />
+			</center>
+		</form>
+	</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<head>
+    <title>Criação de Personagem</title>
+
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/tabs.css" />
+    <link rel="stylesheet" type="text/css" href="css/tabstyles.css" />
+    <link rel="stylesheet" type="text/css" href="css/myCSS.css"/>
+
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/animacao.js"></script>
+    <script src="js/myJS.js"></script>
+
+
+</head>
+<div class="container">
+            <!-- Top Navigation -->
+    <header class="codrops-header header-site">
+<!--                 <span><img src="img/DD.jpg" width="100px" height="100px" id="logo"/></span> -->
+    <h1><center>RPG Planner</center></h1>
+                <!--<img src="TesteLogoPet.png" width="70px" height="70px" id="logo"/>-->
+    </header>
+</div>
+<div class="tabs tabs-style-bar">
+            <nav>
+                <ul>
+                </ul>
+            </nav>
+            <nav>
+                <ul>
+                </ul>
+            </nav>
+            <nav>
+                <ul>
+                </ul>
+            </nav>
+            <nav>
+                <ul>
+                </ul>
+            </nav>
+            <nav>
+                <ul>
+                </ul>
+            </nav>
+            <nav>
+                <ul>
+                </ul>
+            </nav>
+            <nav>
+                <ul>
+                </ul>
+            </nav>
+            <nav>
+                <ul>
+                </ul>
+            </nav>
+</div>
+		<br/><br/>
+		<body>
+			<form action="Registrado.html" method="post">
+			<brl/>
+				<center><table border="3" class = "oi" style = "background-color: #001a33;
+		color: #0068CC;">
+					<tr>
+						<td>
+							<p id = "table-content">Selecione uma raça</p>
+							<center>
+							<!-- <select id ="Raça" name="Raça">
+								<option id = "skills" onselect = "changeSkills()"value="orc">Orc</option>
+								<option id = "skills" onselect = "changeSkills()"value="elfo">Elfo</option>
+								<option id = "skills" onselect = "changeSkills()"value="anao">Anão</option>
+								<option id = "skills" onselect = "changeSkills()"value="humano">Humano</option>
+								<option id = "skills" onselect = "changeSkills()"value="hobbit">Hobbit</option>
+							</select> -->
+							<input id = "anao" onclick="changeSkills(this.id)" type="radio" name="Poder"> Anão
+							</center>	
+						</td>
+						<td>
+							<p>Indique o nome do personagem:</p>
+							<center><input type="text" name="nome personagem" maxlength="30" size="30" /></center>
+						</td>
+					</tr>
+						<tr>
+							<td>
+								<p class>Selecione seus poderes</p>
+								<input id = "bolaDeFogo" type="radio" name="Poder"> Bola de Fogo 
+								 <br />
+								 <input id = "iPowers2" type="radio" name="Poder"> Soco Destruidor 
+								 <br />
+								 <input id = "iPowers3" type="radio" name="Poder"> Pé Flamejante
+								<br />
+								 <input id = "iPowers4" type="radio" name = "Poder"> Golpe Cortante 
+								<br/>
+								 <input id = "iPowers5" type="radio" name = "Poder"> Voar
+								<br/>
+							</td>				
+							<td>
+								<p>Selecione um poder ultimato</p>
+								<input type="radio" name="Ultimato"> Ultimato de Luzes
+								<input type="radio" name="Ultimato"> Ultimato de Fogo
+								<input type="radio" name="Ultimato"> Ultimato de Rochas
+
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<center>
+								<LABEL>Descrição do Personagem: </LABEL>
+								<br/>
+								 	<TEXTAREA rows = "10" cols = "50" name = "descricao"></TEXTAREA>
+								 </center>
+				 			</td>
+				 		</tr>
+				 </table>
+				<input type = "submit" name = "submit" />
+			</center>
+		</form>
+	</body>
+</html>
