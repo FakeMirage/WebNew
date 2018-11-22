@@ -1,0 +1,26 @@
+/*header
+{
+	width:100%;
+     background-image:url(img/DD.jpg);
+}*/
+.header-site
+{
+	background-color: #001a33;
+/*	background-image: url(img/DD.jpg);
+	background-position: 100% 100%;
+	background-repeat: no-repeat;*/
+}
+footer{
+	background-color: #000000;
+}
+.link-bonito
+{
+	color: #0BB2E3;
+}
+.link-bonito:hover, .link-bonito:focus {
+	color: #0BB2E3;
+}
+.link-default
+{
+	
+}
