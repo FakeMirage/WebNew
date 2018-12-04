@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <meta charset="utf-8">
 <head>
@@ -23,102 +23,98 @@
             <!-- Top Navigation -->
     <header class="codrops-header header-site">
 <!--                 <span><img src="img/DD.jpg" width="100px" height="100px" id="logo"/></span> -->
-    <h1><center>RPG Planner</center></h1>
+    <h1 class = "bluet"><center>RPG Planner</center></h1>
                 <!--<img src="TesteLogoPet.png" width="70px" height="70px" id="logo"/>-->
     </header>
 </div>
 <div class="tabs tabs-style-bar">
             <nav>
                 <ul>
-                </ul>
-            </nav>
-            <nav>
-                <ul>
-                </ul>
-            </nav>
-            <nav>
-                <ul>
-                </ul>
-            </nav>
-            <nav>
-                <ul>
-                </ul>
-            </nav>
-            <nav>
-                <ul>
-                </ul>
-            </nav>
-            <nav>
-                <ul>
-                </ul>
-            </nav>
-            <nav>
-                <ul>
-                </ul>
-            </nav>
-            <nav>
-                <ul>
+                	<li><a href="ListaPersonagens.html" class="icon icon-home"><span>Retornar</span></a></li>
                 </ul>
             </nav>
 </div>
-		<br/><br/>
+		<br/>
+		<br/>
 		<body>
-			<form action="Registrado.html" method="post">
+			<form action="ListaPersonagens.html" method="post">
 			<brl/>
 				<center><table border="3" class = "oi" style = "background-color: #001a33;
-		color: #0068CC;">
+				color: #0068CC;">
 					<tr>
-						<td>
-							<p id = "table-content">Selecione uma raça</p>
-							<center>
-							<!-- <select id ="Raça" name="Raça">
-								<option id = "skills" onselect = "changeSkills()"value="orc">Orc</option>
-								<option id = "skills" onselect = "changeSkills()"value="elfo">Elfo</option>
-								<option id = "skills" onselect = "changeSkills()"value="anao">Anão</option>
-								<option id = "skills" onselect = "changeSkills()"value="humano">Humano</option>
-								<option id = "skills" onselect = "changeSkills()"value="hobbit">Hobbit</option>
-							</select> -->
-							<input id = "anao" onclick="changeSkills(this.id)" type="radio" name="Poder"> Anão
-							</center>	
-						</td>
-						<td>
+						<td colspan = "2">
 							<p>Indique o nome do personagem:</p>
 							<center><input type="text" name="nome personagem" maxlength="30" size="30" /></center>
 						</td>
 					</tr>
-						<tr>
-							<td>
-								<p class>Selecione seus poderes</p>
-								<input id = "bolaDeFogo" type="radio" name="Poder"> Bola de Fogo 
-								 <br />
-								 <input id = "iPowers2" type="radio" name="Poder"> Soco Destruidor 
-								 <br />
-								 <input id = "iPowers3" type="radio" name="Poder"> Pé Flamejante
-								<br />
-								 <input id = "iPowers4" type="radio" name = "Poder"> Golpe Cortante 
-								<br/>
-								 <input id = "iPowers5" type="radio" name = "Poder"> Voar
-								<br/>
-							</td>				
-							<td>
-								<p>Selecione um poder ultimato</p>
-								<input type="radio" name="Ultimato"> Ultimato de Luzes
-								<input type="radio" name="Ultimato"> Ultimato de Fogo
-								<input type="radio" name="Ultimato"> Ultimato de Rochas
-
-							</td>
-						</tr>
-						<tr>
-							<td colspan="2">
-								<center>
-								<LABEL>Descrição do Personagem: </LABEL>
-								<br/>
-								 	<TEXTAREA rows = "10" cols = "50" name = "descricao"></TEXTAREA>
-								 </center>
-				 			</td>
-				 		</tr>
+					<tr>
+						<td>
+							<p id = "table-content">Selecione uma raça</p>
+							<center>
+							<input id = "anao" onclick="changeSkills(this.id, this.name)" type="radio" name="Raça"> Anão
+							<br/>
+							<input id = "elfo" onclick="changeSkills(this.id, this.name)" type="radio" name="Raça"> Elfo
+							<br/>
+							<input id = "halfling" onclick="changeSkills(this.id, this.name)" type="radio" name="Raça"> Halfling
+							</br>
+							<input id = "humano" onclick="changeSkills(this.id, this.name)" type="radio" name="Raça"> Humano
+							<br/>
+							<input id = "orc" onclick="changeSkills(this.id, this.name)" type="radio" name="Raça"> Orc
+							<br/>
+							</center>	
+						</td>
+						<td>
+							<center>
+							<p id = "table-content">Selecione uma classe</p>
+							<input id = "barbaro" onclick="changeSkills(this.id, this.name)" type="radio" name="Classe"> Bárbaro
+							<br/>
+							<input id = "bardo" onclick="changeSkills(this.id, this.name)" type="radio" name="Classe"> Bardo
+							<br/>
+							<input id = "clerico" onclick="changeSkills(this.id, this.name)" type="radio" name="Classe"> Clérigo
+							</br>
+							<input id = "guerreiro" onclick="changeSkills(this.id, this.name)" type="radio" name="Classe"> Guerreiro
+							<br/>
+							<input id = "mago" onclick="changeSkills(this.id, this.name)" type="radio" name="Classe"> Mago
+							<br/>
+							</center>	
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<center>
+							<p>Selecione seu poder racial</p>
+							<input type="radio" name="Poder"><label id = "rPower1">Poder 1</label> 
+							<br />
+							<input type="radio" name="Poder"><label id = "rPower2">Poder 2</label>
+							<br /> 
+							<input type="radio" name="Poder"><label id = "rPower3">Poder 3</label>
+							<br />
+							</center>
+						</td>
+						<td>
+							<center>
+							<p>Selecione seu poder de classe</p>
+							<input type="radio" name="Poder"><label id = "cPower1">Poder 1</label> 
+							<br />
+							<input type="radio" name="Poder"><label id = "cPower2">Poder 2</label>
+							<br /> 
+							<input type="radio" name="Poder"><label id = "cPower3">Poder 3</label>
+							<br/>
+							</center>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<center>
+							<LABEL>Descrição do Personagem: </LABEL>
+							<br/>
+							<TEXTAREA rows = "10" cols = "50" name = "descricao"></TEXTAREA>
+							<br/>
+							<input class = "buttonzera" onclick = "confirmChar()"type = "submit" name = "submit"/>
+							</center>
+				 		</td>
+				 	</tr>
 				 </table>
-				<input type = "submit" name = "submit" />
 			</center>
 		</form>
 	</body>

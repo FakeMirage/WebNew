@@ -2,7 +2,7 @@
 <html>
 <meta charset="utf-8">
 <head>
-    <title>Home</title>
+    <title>Personagens</title>
 
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
@@ -14,6 +14,7 @@
     <script src="js/modernizr.custom.js"></script>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/animacao.js"></script>
+    <script src="js/charListManager.js"></script>
 
 </head>
 <body>
@@ -30,20 +31,36 @@
         <div class="tabs tabs-style-bar">
             <nav>
                 <ul>
-                    <li><a href="#" class="icon icon-home"><span>Home</span></a></li>
-                    <li><a href="ListaPersonagens.html" class="icon icon-display"><span>Personagens</span></a></li>
+                    <li><a href="PaginaInicial.html" class="icon icon-home"><span>Home</span></a></li>
+                    <li><a href="#" class="icon icon-display"><span>Criar Personagem</span></a></li>
                     <li><a href="ListaMesas.html" class="icon icon-date"><span>Mesas</span></a></li>
                 </ul>
             </nav>
         </div>
-
+        <p style = "font-size: 30px;">Seus Personagens</p>
         <br /><br /><br /><br />
 
         <center><div class="divTexto">
             
-            <br/><br/><br/><br/><br/><br/><p label id = "BemVindo">Bem vindo(a), Usuário!<br/><br/><br/><br/><br/><br/>
+            <p label id = "char1">Personagem:<br/>
+                Nome: nome<br/>  Raça: raça<br/>  Classe: classe<br/>
+                Poder Racial: poderracial<br/>  Poder de Classe: poderdeclasse<br/>
             </p>
-        </div>
+        </div></center>
+        <br/>
+        <center><div class="divTexto">
+        <form action = "CriacaoPersonagem.html" method = "post">
+        <center><input  id = "char3" class = "buttonzera" type="submit" name="btn" value="Criar"/></center>
+        </div></center>
+        </form>
+        <br/>
+        <center><div class="divTexto">
+            <p><label id = "char3_text">Personagem:<br/>
+                Nome: nome<br/>  Raçaasaasasa: raça<br/>  Classe: classe<br/>
+                Poder Racial: poderracial<br/>  Poder de Classe: poderdeclasse<br/>
+            </label></p>
+            <center><button id = "char3" onclick = "deleteChar(this.id)" class = "buttonzera">Deletar</button></center>
+        </div></center>
 </body>
 <script src="js/cbpFWTabs.js"></script>
 </html>

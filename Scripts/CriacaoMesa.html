@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<head>
+    <title>Criação de Personagem</title>
+
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/tabs.css" />
+    <link rel="stylesheet" type="text/css" href="css/tabstyles.css" />
+    <link rel="stylesheet" type="text/css" href="css/myCSS.css"/>
+
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/animacao.js"></script>
+    <script src="js/myJS.js"></script>
+
+
+</head>
+<div class="container">
+            <!-- Top Navigation -->
+    <header class="codrops-header header-site">
+<!--                 <span><img src="img/DD.jpg" width="100px" height="100px" id="logo"/></span> -->
+    <h1 class = "bluet"><center>RPG Planner</center></h1>
+                <!--<img src="TesteLogoPet.png" width="70px" height="70px" id="logo"/>-->
+    </header>
+</div>
+<div class="tabs tabs-style-bar">
+            <nav>
+                <ul>
+                	<li><a href="ListaMesas.html" class="icon icon-home"><span>Retornar</span></a></li>
+                </ul>
+            </nav>
+</div>
+		<br/>
+		<br/>
+		<body>
+			<form action="SuasMesas.html" method="post">
+			<brl/>
+				<center><table border="3" class = "oi" style = "background-color: #001a33;
+				color: #0068CC;">
+					<tr>
+						<td colspan = "2">
+							<p>Indique o nome da mesa:</p>
+							<center><input type="text" name="nome mesa" maxlength="50" size="50" /></center>
+							<br/>
+						</td>
+					</tr>
+					<tr>
+						<td colspan = "2">
+							<p>Convide os jogadores:</p>
+							<center><input type="text" name="jogador1" maxlength="30" size="30" /></center>
+							<center><input type="text" name="jogador2" maxlength="30" size="30" /></center>
+							<center><input type="text" name="jogador3" maxlength="30" size="30" /></center>
+							<center><input type="text" name="jogador4" maxlength="30" size="30" /></center>
+							<center><input type="text" name="jogador5" maxlength="30" size="30" /></center>
+							<br/>
+						</td>
+					</tr>
+					<tr>
+						<td colspan ="2">
+							<center>
+							<p>Selecione a data e horário</p>
+							<p>Dia  Mes  Ano</p>
+							<br/>
+							<select name="Dia">
+								<option value="01">01</option>
+								<option value="02">02</option>
+								<option value="03">03</option>
+								<option value="04">04</option>
+								<option value="05">05</option>
+								<option value="06">06</option>
+								<option value="07">07</option>
+								<option value="08">08</option>
+								<option value="09">09</option>
+								<option value="10">10</option>
+								<option value="11">11</option>
+								<option value="12">12</option>
+								<option value="13">13</option>
+								<option value="14">14</option>
+								<option value="15">15</option>
+								<option value="16">16</option>
+								<option value="17">17</option>
+								<option value="18">18</option>
+								<option value="19">19</option>
+								<option value="20">20</option>
+								<option value="21">21</option>
+								<option value="22">22</option>
+								<option value="23">23</option>
+								<option value="24">24</option>
+								<option value="25">25</option>
+								<option value="26">26</option>
+								<option value="27">27</option>
+								<option value="28">28</option>
+								<option value="29">29</option>
+								<option value="30">30</option>
+								<option value="31">31</option>
+							</select>
+							<select name = "Mes">
+								<option value="01">01</option>
+								<option value="02">02</option>
+								<option value="03">03</option>
+								<option value="04">04</option>
+								<option value="05">05</option>
+								<option value="06">06</option>
+								<option value="07">07</option>
+								<option value="08">08</option>
+								<option value="09">09</option>
+								<option value="10">10</option>
+								<option value="11">11</option>
+								<option value="12">12</option>
+							</select>
+							<input type="text" name="Ano" maxlength="6" size="6"/>
+							<p>Horas  Minutos</p>
+							<br/>
+							<select name="Horas">
+								<option value="00">00</option>
+								<option value="01">01</option>
+								<option value="02">02</option>
+								<option value="03">03</option>
+								<option value="04">04</option>
+								<option value="05">05</option>
+								<option value="06">06</option>
+								<option value="07">07</option>
+								<option value="08">08</option>
+								<option value="09">09</option>
+								<option value="10">10</option>
+								<option value="11">11</option>
+								<option value="12">12</option>
+								<option value="13">13</option>
+								<option value="14">14</option>
+								<option value="15">15</option>
+								<option value="16">16</option>
+								<option value="17">17</option>
+								<option value="18">18</option>
+								<option value="19">19</option>
+								<option value="20">20</option>
+								<option value="21">21</option>
+								<option value="22">22</option>
+								<option value="23">23</option>
+							</select>
+							<select name="Minutos">
+								<option value="00">00</option>
+								<option value="10">10</option>
+								<option value="20">20</option>
+								<option value="30">30</option>
+								<option value="40">40</option>
+								<option value="50">50</option>
+							</select>
+							<br/>
+							<input class = "buttonzera" type="submit" name="btn" value="Enviar">
+							</center>
+						</td>
+					</tr>
+				 </table>
+			</center>
+		</form>
+	</body>
+</html>

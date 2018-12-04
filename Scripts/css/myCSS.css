@@ -34,3 +34,46 @@ width:250px;
 	background-color: #4C4B54;
 
 }
+.divTexto
+{
+    color: #0068CC;
+	background-color: #001a33;
+            border-color: #2CC185;
+            border-style: double;
+            border-width: 5px;
+            width:900px;
+            height:80%;
+            /*position:absolute;*/
+            top:70%;
+            left:17%;
+            margin-top:-1px;
+            margin-left:-1px;
+            margin-right:-1px;
+            text-align: justify-all;
+}
+.buttonzera
+{
+	width: 100px;
+    background-color: #2CC185;
+    color: white;
+    padding: 8px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.bluet
+{
+    color: #0068CC;
+}
+
+.seemingbutton {
+  text-decoration: none;
+  background-color: #EEEEEE;
+  color: #333333;
+  padding: 2px 6px 2px 6px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;

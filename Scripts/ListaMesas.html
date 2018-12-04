@@ -2,7 +2,7 @@
 <html>
 <meta charset="utf-8">
 <head>
-    <title>Home</title>
+    <title>Personagens</title>
 
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
@@ -14,6 +14,7 @@
     <script src="js/modernizr.custom.js"></script>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/animacao.js"></script>
+    <script src="js/charListManager.js"></script>
 
 </head>
 <body>
@@ -30,20 +31,36 @@
         <div class="tabs tabs-style-bar">
             <nav>
                 <ul>
-                    <li><a href="#" class="icon icon-home"><span>Home</span></a></li>
-                    <li><a href="ListaPersonagens.html" class="icon icon-display"><span>Personagens</span></a></li>
-                    <li><a href="ListaMesas.html" class="icon icon-date"><span>Mesas</span></a></li>
+                    <li><a href="PaginaInicial.html" class="icon icon-home"><span>Home</span></a></li>
+                    <li><a href="ListaPersonagens.html" class="icon icon-display"><span>Criar Personagem</span></a></li>
+                    <li><a href="SuasMesas.html" class="icon icon-date"><span>Suas Mesas</span></a></li>
                 </ul>
             </nav>
         </div>
-
+        <p style = "font-size: 30px;">Seus Personagens</p>
         <br /><br /><br /><br />
 
         <center><div class="divTexto">
             
-            <br/><br/><br/><br/><br/><br/><p label id = "BemVindo">Bem vindo(a), Usuário!<br/><br/><br/><br/><br/><br/>
-            </p>
-        </div>
+            <p><label id = "mesa1_text">Nome:<br/>
+                Mestre:<br/>Personagens e Jogadores:<br/>
+                Próximo jogo marcado para:
+            <label></p>
+        </div></center>
+        <br/>
+        <center><div class="divTexto">
+        <form action = "CriacaoMesa.html" method = "post">
+        <center><input  id = "mesa2" class = "buttonzera" type="submit" name="btn" value="Criar"/></center>
+        </div></center>
+        </form>
+        <br/>
+        <center><div class="divTexto">
+            <p><label id = "mesa3_text">Nome:<br/>
+                Mestre:<br/>Personagens e Jogadores:<br/>
+                Próximo jogo marcado para:
+            </label></p>
+            <center><button id = "mesa3" onclick = "sairDeletarMesa(this.id, 'sair')" class = "buttonzera">Sair</button></center>
+        </div></center>
 </body>
 <script src="js/cbpFWTabs.js"></script>
 </html>
